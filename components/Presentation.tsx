@@ -1,15 +1,12 @@
 "use client" // this is a client component
 import React from "react"
-import Image from "next/image"
-import { Link } from "react-scroll/modules"
-import { HiArrowDown } from "react-icons/hi"
 
 const Presentation = () => {
   return (
     <section id="home">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 pt-16 sm:pt-32 md:pt-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl text-center text-blue-900 ">CARVA</h1>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-8xl text-center text-blue-900 ">CARVA</h1>
           <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:mx-0 lg:max-w-none md:grid-cols-2"></div>
           <p className="text-lg md:text-2xl text-center">
             <span className="font-bold text-blue-900">
@@ -92,6 +89,8 @@ const Presentation = () => {
           </div>
         </div>
       </div>
+
+      <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:mx-0 lg:max-w-none md:grid-cols-2"></div>
 
       {/* <div className="flex flex-row items-center text-center justify-center ">
         <Link

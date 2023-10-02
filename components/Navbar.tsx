@@ -34,7 +34,7 @@ export default function NavBar() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 lg:top-5 z-50 2xl:w-2/3 2xl:mx-auto ">
+      <header className="inset-x-0 fixed top-0 bg-white lg:top-5 z-50 2xl:w-2/3 2xl:mx-auto ">
         <nav className="flex items-center md:justify-center justify-between p-2 lg:p-20 lg:px-8" aria-label="Global">
         <Link to="presentation" className="hover:cursor-pointer">  
           <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8">
