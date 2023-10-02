@@ -3,8 +3,8 @@ import React from "react"
 
 const Activities = () => {
     return (
-      <div>
-        <h2 className="text-center font-bold text-3xl underline mb-4">
+      <section id="activities">
+        <h2 className="text-center font-bold text-3xl underline mb-4 mt-4">
           Activités
         </h2>
 
@@ -14,7 +14,7 @@ const Activities = () => {
           </div>
           <div>
             <p className="text-center mt-4">
-            Entretien et réparations de votre véhicule selon les préconisations
+            <span className="font-bold text-blue-900">Entretien et réparations  </span>de votre véhicule selon les préconisations
             constructeurs à votre domicile ou en atelier avec possibilité d’un
             véhicule de prêt (Selon les prestations à effectuer)
             </p>
@@ -29,7 +29,7 @@ const Activities = () => {
           </div>
           <div>
             <p className="text-center mt-4">
-            Diagnostique de votre véhicule chez vous et
+            <span className="font-bold text-blue-900">Diagnostique</span> de votre véhicule chez vous et
             possibilité de vous déposer un véhicule de prêt
             pendant les réparations
             </p>
@@ -44,7 +44,7 @@ const Activities = () => {
           </div>
           <div>
             <p className="text-center mt-4">
-            Accompagnement dans la vente de votre véhicule à particulier
+            <span className="font-bold text-blue-900">Accompagnement</span> dans la <span className="font-bold text-blue-900">vente</span> de votre véhicule à particulier
             (consulter mes prestations)
             </p>
           </div>          
@@ -58,8 +58,8 @@ const Activities = () => {
           </div>
           <div>
             <p className="text-center mt-4">
-            Accompagnement personnalisés dans la
-            recherche d’un véhicule (consulter mes
+            <span className="font-bold text-blue-900">Accompagnement</span> personnalisés dans la
+            <span className="font-bold text-blue-900"> recherche</span> d’un véhicule (consulter mes
             prestations)
             </p>
           </div>          
@@ -73,17 +73,17 @@ const Activities = () => {
         </div>
         <div>
             <p className="text-center">
-            Préparation et pose de pièces spécifiques pour véhicule sportif.
-            (Pose de ligne d’échappement - combinés filetés -
-            manomètres - préparation moteur/boite - etc)
-            (Sur devis)
+            Préparation et pose de <span className="font-bold text-blue-900">pièces spécifiques pour véhicule sportif </span> 
+             (pose de ligne d’échappement - combinés filetés -
+            manomètres - préparation moteur/boite - etc) -
+            Sur devis
             </p>
         </div>          
       </div>
 
       <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:mx-0 lg:max-w-none md:grid-cols-2"></div>
 
-      </div>
+      </section>
 
       
     )

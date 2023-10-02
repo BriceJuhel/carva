@@ -3,7 +3,7 @@ import React from "react"
 
 const Presentation = () => {
   return (
-    <section id="home">
+    <section id="presentation">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 pt-16 sm:pt-32 md:pt-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-3/5">
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-8xl text-center text-blue-900 ">CARVA</h1>
@@ -30,9 +30,9 @@ const Presentation = () => {
       </div>
       <div className="flex justify-center items-center sm:mt-20">
         <div className="text-center">
-        <p className="text-xl sm:text-4xl font-bold">
-            Je me déplace à votre domicile
-        </p>
+          <h3 className="text-xl sm:text-4xl font-bold">
+              Je me déplace à votre domicile
+          </h3>
         </div>
         <div>
             <button className="bg-yellow-200 p-2 sm:p-4 font-semibold rounded ml-2 sm:ml-10 sm:text-xl">Prendre rendez-vous</button>

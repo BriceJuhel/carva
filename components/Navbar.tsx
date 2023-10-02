@@ -5,48 +5,51 @@ import { Link } from "react-scroll/modules"
 import { usePathname } from "next/navigation"
 
 interface NavItem {
-    label: string
-    page: string
-  }
+  label: string
+  page: string
+}
 
 const NAV_ITEMS: Array<NavItem> = [
-    
-    {
-      label: "Activités",
-      page: "activities",
-    },
-    {
-      label: "Tarifs/Prestations",
-      page: "prices",
-    },
-    {
-      label: "Horaires",
-      page: "schedules",
-    },
-    {
-      label: "Contact",
-      page: "contact",
-    },
-  ]
+  {
+    label: "Activités",
+    page: "activities",
+  },
+  {
+    label: "Tarifs/Prestations",
+    page: "prices",
+  },
+  {
+    label: "Horaires",
+    page: "schedules",
+  },
+  {
+    label: "Contact",
+    page: "contact",
+  },
+]
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false)
+
+  const closeMenu = () => {
+    setNavbar(false);
+  };
 
   return (
     <div className="bg-white">
       <header className="inset-x-0 fixed top-0 bg-white lg:top-5 z-50 2xl:w-2/3 2xl:mx-auto ">
         <nav className="flex items-center md:justify-center justify-between p-2 lg:p-20 lg:px-8" aria-label="Global">
-        <Link to="presentation" className="hover:cursor-pointer">  
-          <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8">
-            <a href="/" className="-m-1.5 p-1.5">
-              <img
-                className="sm:h-48 h-24 w-auto"
-                src="/images/logo.png"
-                alt="Logo"
-              />
-            </a>
-          </div>
-        </Link>
+          <Link to="presentation" className="hover:cursor-pointer">
+            <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8">
+              <a href="/" className="-m-1.5 p-1.5">
+                <img
+                  className="sm:h-48 h-24 w-auto"
+                  src="/images/logo.png"
+                  alt="Logo"
+                />
+              </a>
+            </div>
+          </Link>
           <div className="flex md:hidden">
             <button
               type="button"
@@ -59,25 +62,32 @@ export default function NavBar() {
           </div>
           <div className="hidden md:flex md:gap-x-12 z-20">
             {NAV_ITEMS.map((item, idx) => {
-            return (
-              <Link key={idx} to={item.page} className={"text-sm lg:text-lg font-semibold leading-6 text-gray-600 hover:text-gray-900 relative group cursor-pointer"} activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              onClick={() => setNavbar(!navbar)}>
-                {item.label}
-                <span className="absolute -bottom-1 left-1/2 w-2 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all transition-all"></span>              
-              </Link>
-            )
+              return (
+                <Link
+                  key={idx}
+                  to={item.page}
+                  className="text-sm lg:text-lg font-semibold leading-6 text-gray-600 hover:text-gray-900 relative group cursor-pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  onClick={() => {
+                    closeMenu();
+                  }}
+                >
+                  {item.label}
+                  <span className="absolute -bottom-1 left-1/2 w-2 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all transition-all"></span>
+                </Link>
+              );
             })}
           </div>
         </nav>
-        <Dialog as="div" className="lg:hidden" open={navbar} onClose={setNavbar}>
+        <Dialog as="div" className="lg:hidden" open={navbar} onClose={() => setNavbar(false)}>
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-50 bg-white px-2 py-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 h-1/2 shadow text-center">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="#" className="-m-1.5 p-1.5" onClick={closeMenu}>
                 <img
                   className="h-24 w-auto"
                   src="/images/logo.png"
@@ -90,20 +100,23 @@ export default function NavBar() {
                 onClick={() => setNavbar(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="h-12 w-12" aria-hidden="true" />
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+              <div className=" divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {NAV_ITEMS.map((item) => (
-                    <a
+                    <Link
                       key={item.label}
-                      href={item.page}
+                      to={item.page}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      onClick={() => {
+                        closeMenu();
+                      }}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -111,6 +124,6 @@ export default function NavBar() {
           </Dialog.Panel>
         </Dialog>
       </header>
-    </div>                
+    </div>
   )
-        }
+}
