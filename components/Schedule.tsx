@@ -33,6 +33,7 @@ export default function Schedule() {
             <li className="flex items-center justify-center"><img className="w-auto h-auto max-h-24" src="/images/aliapur.png" alt="Logo Aliapur" /></li>         
         </ul>
       </div>
+      <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:max-w-none md:grid-cols-2"></div>
     </section>
   )
 }
