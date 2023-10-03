@@ -13,7 +13,7 @@ const Presentation = () => {
         <Link to="contact" 
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={-120}
                   duration={600}>
             <button className="bg-blue-400 text-white p-2 sm:p- font-bold rounded sm:text-3xl hover:bg-blue-600">Prendre rendez-vous</button>
           </Link>
