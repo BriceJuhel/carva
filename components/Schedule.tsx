@@ -1,6 +1,6 @@
 export default function Schedule() {
   return (
-    <section className="my-8" id="schedule">
+    <section className="mt-8" id="schedule">
         <h2 className="text-center font-bold text-3xl underline mb-10 mt-4">
           Horaires
         </h2>

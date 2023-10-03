@@ -39,7 +39,11 @@ export default function NavBar() {
     <div className="bg-white">
       <header className="inset-x-0 fixed top-0 bg-white sm:shadow z-50 2xl:w-2/3 2xl:mx-auto ">
         <nav className="flex items-center md:justify-center justify-between p-2 lg:p-8 lg:px-8" aria-label="Global">
-          <Link to="presentation" className="hover:cursor-pointer">
+          <Link to="presentation" className="hover:cursor-pointer" 
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={600}>
             <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8 ">
               <a href="/" className="-m-1.5 p-6">
                 <img
@@ -70,8 +74,8 @@ export default function NavBar() {
                   activeClass="active"
                   spy={true}
                   smooth={true}
-                  offset={-100}
-                  duration={500}
+                  offset={-120}
+                  duration={600}
                   onClick={() => {
                     closeMenu();
                   }}
@@ -89,7 +93,7 @@ export default function NavBar() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5" onClick={closeMenu}>
                 <img
-                  className="h-16 w-auto"
+                  className="h-16 w-auto m-4"
                   src="/images/logo.png"
                   alt="Logo"
                 />
@@ -111,6 +115,10 @@ export default function NavBar() {
                       key={item.label}
                       to={item.page}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      spy={true}
+                      smooth={true}
+                      offset={-140}
+                      duration={600}
                       onClick={() => {
                         closeMenu();
                       }}
