@@ -48,7 +48,7 @@ export default function Contact() {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
-              Numéro de téléphone
+              Email
             </label>
             <div className="mt-2.5">
               <input
@@ -63,7 +63,7 @@ export default function Contact() {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
-              Email
+              Numéro de téléphone
             </label>
             <div className="relative mt-2.5">
               <input
