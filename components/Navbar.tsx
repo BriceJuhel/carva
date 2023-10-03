@@ -37,13 +37,13 @@ export default function NavBar() {
 
   return (
     <div className="bg-white">
-      <header className="inset-x-0 fixed top-0 bg-white lg:top-5 z-50 2xl:w-2/3 2xl:mx-auto ">
-        <nav className="flex items-center md:justify-center justify-between p-2 lg:p-20 lg:px-8" aria-label="Global">
+      <header className="inset-x-0 fixed top-0 bg-white sm:shadow z-50 2xl:w-2/3 2xl:mx-auto ">
+        <nav className="flex items-center md:justify-center justify-between p-2 lg:p-8 lg:px-8" aria-label="Global">
           <Link to="presentation" className="hover:cursor-pointer">
             <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8 ">
-              <a href="/" className="-m-1.5 p-1.5">
+              <a href="/" className="-m-1.5 p-6">
                 <img
-                  className="sm:h-48 h-24 w-auto"
+                  className="sm:h-16 h-16 w-auto"
                   src="/images/logo.png"
                   alt="Logo"
                 />
@@ -89,7 +89,7 @@ export default function NavBar() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5" onClick={closeMenu}>
                 <img
-                  className="h-24 w-auto"
+                  className="h-16 w-auto"
                   src="/images/logo.png"
                   alt="Logo"
                 />
