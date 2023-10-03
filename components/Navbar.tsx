@@ -38,13 +38,13 @@ export default function NavBar() {
     <div className="bg-white">
       <header className="inset-x-0 fixed top-0 bg-white sm:shadow z-50 2xl:w-2/3 2xl:mx-auto ">
         <nav className="flex items-center md:justify-center justify-between p-2 lg:p-8 lg:px-8" aria-label="Global">
-          <Link to="presentation" className="hover:cursor-pointer" 
+          <Link to="presentation" className=''
                   spy={true}
                   smooth={true}
                   offset={-100}
                   duration={600}>
             <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8 ">
-              <a href="/" className="-m-1.5 p-6">
+              <a href="/" className="-m-1.5 p-6 focus:outline-none" style={{ WebkitTapHighlightColor: 'transparent' }}>
                 <img
                   className="sm:h-16 h-16 w-auto"
                   src="/images/logo.png"
@@ -90,7 +90,7 @@ export default function NavBar() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-50 bg-white px-2 py-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 h-1/2 shadow text-center">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5" 
+              <a href="#" className="-m-1.5 p-1.5 focus:outline-none" style={{ WebkitTapHighlightColor: 'transparent' }} 
               onClick={closeMenu}>
                 
                 <img

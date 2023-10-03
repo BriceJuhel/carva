@@ -57,7 +57,7 @@ export default function Contact() {
                 id="email"
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-900 sm:text-sm sm:leading-6"
-                placeholder='01 23 45 67 89'
+                placeholder='exemple@email.com'
               />
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Contact() {
                 id="phone-number"
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-900 sm:text-sm sm:leading-6"
-                placeholder='exemple@mail.com'
+                placeholder='01 23 45 67 89'
               />
             </div>
           </div>
