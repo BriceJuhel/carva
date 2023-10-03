@@ -40,11 +40,11 @@ const Prices = () => {
         l&apos;annonce - Réponse aux appels/Mails - Accompagnement lors des visites
         </p>
 
-        <h3 className="text-xl mb-4 mt-4 font-semibold">Accompagnement recherche d’un véhicule :</h3>
+        <h3 className="text-xl mb-4 mt-4 font-semibold">Accompagnement recherche d&apos;un véhicule :</h3>
         <p>
         Sur devis suivant type de recherche du véhicule et localisation (formulaire
         de contact). <br />
-        Exemple : 349€ TTC pour la recherche et l&apos;inspection d'un véhicule
+        Exemple : 349€ TTC pour la recherche et l&apos;inspection d&apos;un véhicule
         à 50kms maximum autour de La Chevrolière.
         </p>
         <p className="italic">
