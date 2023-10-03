@@ -16,7 +16,7 @@ const Activities = () => {
           <div>
             <p className="text-center mt-4">
             <span className="font-bold text-blue-900">Entretien et réparations  </span>de votre véhicule selon les préconisations
-            constructeurs à votre domicile ou en atelier avec possibilité d’un
+            constructeurs à votre domicile ou en atelier avec possibilité d&apos;un
             véhicule de prêt (selon les prestations à effectuer)
             </p>
           </div>          
@@ -31,8 +31,7 @@ const Activities = () => {
           <div>
             <p className="text-center mt-4">
             <span className="font-bold text-blue-900">Diagnostique</span> de votre véhicule chez vous et
-            possibilité de vous déposer un véhicule de prêt
-            pendant les réparations
+            possibilité de vous déposer un véhicule de prêt pendant les réparations
             </p>
           </div>          
         </div>
@@ -65,7 +64,7 @@ const Activities = () => {
           <div>
             <p className="text-center mt-4">
             <span className="font-bold text-blue-900">Accompagnement</span> personnalisés dans la
-            <span className="font-bold text-blue-900"> recherche</span> d’un véhicule {" "}
+            <span className="font-bold text-blue-900"> recherche</span> d&apos;un véhicule {" "}
             <Link to="prices" className="underline cursor-pointer"
                   spy={true}
                   smooth={true}
@@ -85,7 +84,7 @@ const Activities = () => {
         <div>
             <p className="text-center">
             Préparation et pose de <span className="font-bold text-blue-900">pièces spécifiques pour véhicule sportif </span> 
-             (pose de ligne d’échappement - combinés filetés -
+             (pose de ligne d&apos;échappement - combinés filetés -
             manomètres - préparation moteur/boite - etc) -
             Sur devis
             </p>

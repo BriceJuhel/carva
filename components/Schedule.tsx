@@ -17,7 +17,7 @@ export default function Schedule() {
       </div>
         <div className="mt-16 border-t border-gray-200">        
       </div>
-      <h3 className='my-16 text-center font-semibold text-2xl'>Les partenaires de l'entreprise</h3>
+      <h3 className='my-16 text-center font-semibold text-2xl'>Les partenaires de l&apos;entreprise</h3>
       <div className='flex justify-center'>
         <ul className="grid grid-cols-3 sm:grid-cols-4 gap-4 sm:gap-12">
             <li className="flex items-center justify-center"><img className="w-auto h-auto max-h-24 " src="/images/orange-bank.png" alt="Logo Orange Bank" /></li>

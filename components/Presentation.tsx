@@ -21,11 +21,11 @@ const Presentation = () => {
       </div>
       <div className="mt-4 sm:mt-10 text-center">
         <p>
-            Après une dizaine d’années dans différents postes
-            dans l’automobile, je vous propose mes services de
-            réparations et d’entretien à domicile ou dans mon
+            Après une dizaine d&apos;années dans différents postes
+            dans l&apos;automobile, je vous propose mes services de
+            réparations et d&apos;entretien à domicile ou dans mon
             atelier suivant les prestations à effectuer, avec
-            possibilité d’un véhicule de prêt. <br />
+            possibilité d&apos;un véhicule de prêt. <br />
             Également passionnée du sport automobile que je
             pratique en loisirs, je saurai entretenir et préparer vos
             sportives préférées avec soins et rigueur.
@@ -48,7 +48,7 @@ const Presentation = () => {
                           Réactivité
                       </li>
                       <li>
-                          Plus de 10 ans d'expérience
+                          Plus de 10 ans d&apos;expérience
                       </li>
                   </ul>
           </div>

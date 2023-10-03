@@ -22,7 +22,7 @@ const Prices = () => {
         <p>
         Forfait révision/Vidange huile moteur - Remplacement filtre a huile - Niveaux/
         pressions/éclairage - Lecture/effacement défaut calculateur - Essai routier
-        (dans la limite de 5L d’huile - Hors Adblue) : 149€ TTC
+        (dans la limite de 5L d&apos;huile - Hors Adblue) : 149€ TTC
         </p>
         <br />
         <p>
@@ -37,14 +37,14 @@ const Prices = () => {
         </p>
         <p className="italic">
         Prestations : Inspection/Nettoyage/Photos du véhicule - Mise en ligne de
-        l’annonce - Réponse aux appels/Mails - Accompagnement lors des visites
+        l&apos;annonce - Réponse aux appels/Mails - Accompagnement lors des visites
         </p>
 
         <h3 className="text-xl mb-4 mt-4 font-semibold">Accompagnement recherche d’un véhicule :</h3>
         <p>
         Sur devis suivant type de recherche du véhicule et localisation (formulaire
         de contact). <br />
-        Exemple : 349€ TTC pour la recherche et l'inspection d'un véhicule
+        Exemple : 349€ TTC pour la recherche et l&apos;inspection d'un véhicule
         à 50kms maximum autour de La Chevrolière.
         </p>
         <p className="italic">
