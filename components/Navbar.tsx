@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from "react-scroll/modules"
-import { usePathname } from "next/navigation"
 
 interface NavItem {
   label: string
@@ -91,7 +90,9 @@ export default function NavBar() {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-50 bg-white px-2 py-2 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 h-1/2 shadow text-center">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5" onClick={closeMenu}>
+              <a href="#" className="-m-1.5 p-1.5" 
+              onClick={closeMenu}>
+                
                 <img
                   className="h-16 w-auto m-4"
                   src="/images/logo.png"

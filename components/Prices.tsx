@@ -26,7 +26,7 @@ const Prices = () => {
         </p>
         <br />
         <p>
-        Dépannage (Véhicule de moins de 1200 Kg) : 1,80€ TTC/Km (minimum de
+        Dépannage (véhicule de moins de 1200 Kg) : 1,80€ TTC/Km (minimum de
         90€ TTC)
         </p>
 

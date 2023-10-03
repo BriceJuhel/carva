@@ -1,5 +1,6 @@
 "use client" // this is a client component
 import React from "react"
+import { Link } from "react-scroll/modules"
 
 const Activities = () => {
     return (
@@ -16,7 +17,7 @@ const Activities = () => {
             <p className="text-center mt-4">
             <span className="font-bold text-blue-900">Entretien et réparations  </span>de votre véhicule selon les préconisations
             constructeurs à votre domicile ou en atelier avec possibilité d’un
-            véhicule de prêt (Selon les prestations à effectuer)
+            véhicule de prêt (selon les prestations à effectuer)
             </p>
           </div>          
         </div>
@@ -44,8 +45,13 @@ const Activities = () => {
           </div>
           <div>
             <p className="text-center mt-4">
-            <span className="font-bold text-blue-900">Accompagnement</span> dans la <span className="font-bold text-blue-900">vente</span> de votre véhicule à particulier
-            (consulter mes prestations)
+            <span className="font-bold text-blue-900">Accompagnement</span> dans la <span className="font-bold text-blue-900">vente</span> de votre véhicule à particulier {" "}
+            <Link to="prices" className="underline cursor-pointer"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={600}>(consulter mes prestations)
+            </Link>
             </p>
           </div>          
         </div>
@@ -59,8 +65,13 @@ const Activities = () => {
           <div>
             <p className="text-center mt-4">
             <span className="font-bold text-blue-900">Accompagnement</span> personnalisés dans la
-            <span className="font-bold text-blue-900"> recherche</span> d’un véhicule (consulter mes
-            prestations)
+            <span className="font-bold text-blue-900"> recherche</span> d’un véhicule {" "}
+            <Link to="prices" className="underline cursor-pointer"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={600}>(consulter mes prestations)
+            </Link>
             </p>
           </div>          
         </div>

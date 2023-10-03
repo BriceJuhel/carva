@@ -1,5 +1,6 @@
 "use client" // this is a client component
 import React from "react"
+import { Link } from "react-scroll/modules"
 
 const Presentation = () => {
   return (
@@ -9,7 +10,13 @@ const Presentation = () => {
         <img className="my-8 sm:my-8 rounded" src="/images/carva.png" alt="" />
         </div>
         <div>
-            <button className="bg-blue-400 text-white p-2 sm:p- font-bold rounded sm:text-3xl  ">Prendre rendez-vous</button>
+        <Link to="contact" 
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={600}>
+            <button className="bg-blue-400 text-white p-2 sm:p- font-bold rounded sm:text-3xl hover:bg-blue-600">Prendre rendez-vous</button>
+          </Link>
         </div>
       </div>
       <div className="mt-4 sm:mt-10 text-center">
