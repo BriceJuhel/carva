@@ -33,7 +33,7 @@ const Presentation = () => {
       </div>
       <div className="mt-10 sm:mt-10">
         <p className="underline text-center text-xl mb-4 ">
-            Choisir CARVA c'est :
+            Choisir CARVA c&apos;est :
         </p>
         <div className="sm:flex sm:justify-center">
           <div className="pl-4 sm:mr-10">
