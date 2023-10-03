@@ -56,7 +56,7 @@ export default function NavBar() {
           <div className="flex md:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 focus:outline-none" style={{ WebkitTapHighlightColor: 'transparent' }}
               onClick={() => setNavbar(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -101,7 +101,7 @@ export default function NavBar() {
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-gray-700 focus:outline-none" style={{ WebkitTapHighlightColor: 'transparent' }}
                 onClick={() => setNavbar(false)}
               >
                 <span className="sr-only">Close menu</span>
