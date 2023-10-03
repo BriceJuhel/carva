@@ -11,7 +11,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
+      <title>CARVA</title> 
       <body>
         <Navbar />
         {children}
