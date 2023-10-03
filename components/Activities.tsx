@@ -4,7 +4,7 @@ import React from "react"
 const Activities = () => {
     return (
       <section id="activities">
-        <h2 className="text-center font-bold text-3xl underline mb-4 mt-4">
+        <h2 className="text-center font-bold text-3xl underline mb-10 mt-4">
           Activités
         </h2>
 

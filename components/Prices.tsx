@@ -4,7 +4,7 @@ import React from "react"
 const Prices = () => {
     return (
       <section id="prices">
-        <h2 className="text-center font-bold text-3xl underline mb-4 mt-4">
+        <h2 className="text-center font-bold text-3xl underline my-6 sm:mt-10 sm:mb-16">
           Tarifs & Prestations
         </h2>
 
