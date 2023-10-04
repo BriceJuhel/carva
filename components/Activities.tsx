@@ -44,12 +44,12 @@ const Activities = () => {
           <div>
             <p className="text-center mt-4">
             <span className="font-bold">Accompagnement</span> dans la <span className="font-bold">vente</span> de votre véhicule à particulier {" "}
-            <Link to="prices" className="underline cursor-pointer"
+            {/* <Link to="prices" className="underline cursor-pointer"
                   spy={true}
                   smooth={true}
                   offset={-120}
-                  duration={600}>(consulter mes prestations)
-            </Link>
+                  duration={600}><button className="bg-orange-400 hover:bg-orange-500 rounded-xl p-1 font-semibold">Consulter mes prestations</button>
+            </Link> */}
             </p>
           </div>          
         </div>
@@ -62,12 +62,12 @@ const Activities = () => {
             <p className="text-center mt-4">
             <span className="font-bold">Accompagnement</span> personnalisés dans la
             <span className="font-bold"> recherche</span> d&apos;un véhicule {" "}
-            <Link to="prices" className="underline cursor-pointer"
+            {/* <Link to="prices" className="underline cursor-pointer"
                   spy={true}
                   smooth={true}
                   offset={-120}
-                  duration={600}>(consulter mes prestations)
-            </Link>
+                  duration={600}><button className="bg-orange-400 hover:bg-orange-500 rounded-xl p-1 font-semibold">Consulter mes prestations</button>
+            </Link> */}
             </p>
           </div>          
         </div>
@@ -79,7 +79,7 @@ const Activities = () => {
         </div>
         <div>
             <p className="text-center">
-            Préparation et pose de <span className="font-bold">pièces spécifiques pour véhicule sportif </span> 
+            Préparation et pose de pièces spécifiques pour véhicule sportif
              (pose de ligne d&apos;échappement - combinés filetés -
             manomètres - préparation moteur/boite - etc) -
             Sur devis
