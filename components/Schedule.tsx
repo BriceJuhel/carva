@@ -13,7 +13,6 @@ export default function Schedule() {
         <h4 className="text-base font-semibold leading-7 text-gray-900 sm:text-2xl">Mercredi : <span className="mt-1 max-w-2xl text-sm leading-6 text-gray-500 sm:text-2xl">9h00 - 19h00</span></h4>
         <h4 className="text-base font-semibold leading-7 text-gray-900 sm:text-2xl">Jeudi : <span className="mt-1 max-w-2xl text-sm leading-6 text-gray-500 sm:text-2xl">9h00 - 19h00</span></h4>
         <h4 className="text-base font-semibold leading-7 text-gray-900 sm:text-2xl">Vendredi : <span className="mt-1 max-w-2xl text-sm leading-6 text-gray-500 sm:text-2xl">9h00 - 18h00</span></h4>
-        <h4 className="text-base font-semibold leading-7 text-gray-900 sm:text-2xl">Samedi : <span className="mt-1 max-w-2xl text-sm leading-6 text-gray-500 sm:text-2xl">9h00 - 12h00 sur rendez-vous</span></h4>
       </div>
         <div className="mt-16 border-t border-gray-200">        
       </div>
