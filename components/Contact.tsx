@@ -130,6 +130,7 @@ export default function Contact() {
           </button>
         </div>
       </form>
+      <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:max-w-none md:grid-cols-2"></div>
     </section>
   )
 }

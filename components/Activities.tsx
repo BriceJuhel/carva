@@ -13,7 +13,7 @@ const Activities = () => {
           <div className="flex justify-center">
             <img src="/images/cle.png" alt="Clé anglaise" className="w-24 h-24 sm:w-32" />
           </div>
-          <div>
+          <div className="flex items-center justify-center">
             <p className="text-center mt-4">
             <span className="font-bold">Entretien et réparations  </span>de votre véhicule selon les préconisations
             constructeurs à votre domicile ou en atelier avec possibilité d&apos;un
@@ -28,7 +28,7 @@ const Activities = () => {
             <img src="/images/diagnostique.png" alt="Diagnostique" className="w-32 min-w-32 h-24 pl-4"/>
           </div>
                   
-          <div>
+          <div className="flex items-center justify-center">
             <p className="text-center mt-4">
             <span className="font-bold">Diagnostique</span> de votre véhicule chez vous et
             possibilité de vous déposer un véhicule de prêt pendant les réparations
@@ -41,7 +41,7 @@ const Activities = () => {
         <div className="flex justify-center">
             <img src="/images/vente.png" alt="Vente" className="w-24 h-24"/>
           </div>
-          <div>
+          <div className="flex items-center justify-center">
             <p className="text-center mt-4">
             <span className="font-bold">Accompagnement</span> dans la <span className="font-bold">vente</span> de votre véhicule à particulier {" "}
             {/* <Link to="prices" className="underline cursor-pointer"
@@ -58,7 +58,7 @@ const Activities = () => {
           <div className="flex justify-center">
             <img src="/images/loupe.png" alt="Loupe" className="w-24 h-24"/>
           </div>
-          <div>
+          <div className="flex items-center justify-center">
             <p className="text-center mt-4">
             <span className="font-bold">Accompagnement</span> personnalisés dans la
             <span className="font-bold"> recherche</span> d&apos;un véhicule {" "}
@@ -77,7 +77,7 @@ const Activities = () => {
         <div className="flex justify-center">
             <img src="/images/voiture.png" alt="Voiture" className="w-24 h-24 sm:w-32"/>
         </div>
-        <div>
+        <div className="flex items-center justify-center">
             <p className="text-center">
             Préparation et pose de pièces spécifiques pour véhicule sportif
              (pose de ligne d&apos;échappement - combinés filetés -

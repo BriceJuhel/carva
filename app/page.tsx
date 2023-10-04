@@ -3,6 +3,7 @@ import Activities from "@/components/Activities"
 import Prices from "@/components/Prices"
 import Schedule from "@/components/Schedule"
 import Contact from "@/components/Contact"
+import Partners from "@/components/Partners"
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Prices />
       <Schedule />
       <Contact />
+      <Partners />
     </main>
   )
 }
