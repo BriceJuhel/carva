@@ -80,7 +80,7 @@ export default function NavBar() {
                   }}
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-1/2 w-2 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all transition-all"></span>
+                  <span className="absolute -bottom-1 left-1/2 w-2 h-1 bg-gradient-to-r from-amber-500 to-orange-400 transform -translate-x-1/2 group-hover:w-full group-hover:transition-all transition-all"></span>
                 </Link>
               );
             })}

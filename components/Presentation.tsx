@@ -15,7 +15,7 @@ const Presentation = () => {
                   smooth={true}
                   offset={-120}
                   duration={600}>
-            <button className="bg-blue-400 text-white p-2 sm:p- font-bold rounded sm:text-3xl hover:bg-blue-600">Prendre rendez-vous</button>
+            <button className="bg-orange-400 text-gray-800 p-2 sm:p- font-bold rounded sm:text-3xl hover:bg-orange-500">Prendre rendez-vous</button>
           </Link>
         </div>
       </div>
