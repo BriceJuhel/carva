@@ -38,19 +38,29 @@ export default function NavBar() {
     <div className="bg-white">
       <header className="inset-x-0 fixed top-0 bg-white sm:shadow z-50 2xl:w-2/3 2xl:mx-auto ">
         <nav className="flex items-center md:justify-center justify-between p-2 lg:p-8 lg:px-8" aria-label="Global">
-          <Link to="presentation" className=''
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={600}>
-            <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8">
-                <img
-                  className="sm:h-16 h-16 w-auto sm:mt-3 mt-3 ml-3 cursor-pointer"
-                  src="/images/logo.png"
-                  alt="Logo"
-                />
+
+        <Link to="presentation" 
+          spy={true} 
+          smooth={true} 
+          offset={-100} 
+          duration={600}>
+          <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8">
+            <div className="flex flex-col items-center">
+              <img
+                className="sm:h-16 h-16 w-auto sm:mt-2 mt-3 ml-3 cursor-pointer focus:outline-none" style={{ WebkitTapHighlightColor: 'transparent' }}
+                src="/images/logo.png"
+                alt="Logo"
+              />
+              <div className='flex'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 mr-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+                <p> : 06.06.06.06.06</p>
+              </div>
             </div>
-          </Link>
+          </div>
+        </Link>
+          
           <div className="flex md:hidden">
             <button
               type="button"
@@ -92,10 +102,16 @@ export default function NavBar() {
               onClick={closeMenu}>
                 
                 <img
-                  className="h-16 w-auto m-4"
+                  className="h-16 w-auto mt-3 ml-3"
                   src="/images/logo.png"
                   alt="Logo"
                 />
+                <div className='flex ml-5'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 mr-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+                <p> : 06.06.06.06.06</p>
+              </div>
               </a>
               <button
                 type="button"
