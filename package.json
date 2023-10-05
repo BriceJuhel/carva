@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "next": "latest",
+    "node-mailjet": "^6.0.4",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
