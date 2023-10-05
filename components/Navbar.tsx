@@ -43,14 +43,12 @@ export default function NavBar() {
                   smooth={true}
                   offset={-100}
                   duration={600}>
-            <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8 ">
-              <a href="/" className="-m-1.5 p-6 focus:outline-none" style={{ WebkitTapHighlightColor: 'transparent' }}>
+            <div className="flex lg:flex-1 max-w-xs lg:absolute lg:inset-x-12 lg:top-0 lg:z-10 md:mx-8">
                 <img
-                  className="sm:h-16 h-16 w-auto"
+                  className="sm:h-16 h-16 w-auto sm:mt-3 mt-3 ml-3 cursor-pointer"
                   src="/images/logo.png"
                   alt="Logo"
                 />
-              </a>
             </div>
           </Link>
           <div className="flex md:hidden">
