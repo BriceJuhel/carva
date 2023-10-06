@@ -9,7 +9,7 @@ const Activities = () => {
           Activités
         </h2>
 
-        <div className="sm:flex bg-orange-50 p-4 rounded-xl ring-2 ring-inset ring-gray-200">
+        <div className="sm:flex bg-orange-50 p-2 px-8 rounded-xl ring-2 ring-inset ring-gray-200">
           <div className="flex justify-center">
             <img src="/images/cle.png" alt="Clé anglaise" className="w-24 h-24 sm:w-32" />
           </div>
@@ -22,7 +22,7 @@ const Activities = () => {
           </div>          
         </div>
 
-        <div className="sm:flex sm:flex-row-reverse sm:justify-between p-4 ring-2 ring-inset ring-gray-200 rounded-xl mt-2">
+        <div className="sm:flex sm:flex-row-reverse sm:justify-between p-2 px-8 ring-2 ring-inset ring-gray-200 rounded-xl mt-2">
           
           <div className="flex justify-center">
             <img src="/images/diagnostique.png" alt="Diagnostique" className="w-32 min-w-32 h-24 pl-4"/>
@@ -37,7 +37,7 @@ const Activities = () => {
 
         </div>
 
-        <div className="sm:flex bg-orange-50 p-4 rounded-xl justify-between ring-2 ring-inset ring-gray-200 mt-2">
+        <div className="sm:flex bg-orange-50 p-2 px-8 rounded-xl justify-between ring-2 ring-inset ring-gray-200 mt-2">
         <div className="flex justify-center">
             <img src="/images/vente.png" alt="Vente" className="w-24 h-24"/>
           </div>
@@ -54,7 +54,7 @@ const Activities = () => {
           </div>          
         </div>
 
-        <div className="sm:flex sm:flex-row-reverse sm:justify-between p-4 ring-2 ring-inset ring-gray-200 rounded-xl mt-2">
+        <div className="sm:flex sm:flex-row-reverse sm:justify-between p-2 px-8 ring-2 ring-inset ring-gray-200 rounded-xl mt-2">
           <div className="flex justify-center">
             <img src="/images/loupe.png" alt="Loupe" className="w-24 h-24"/>
           </div>
@@ -73,7 +73,7 @@ const Activities = () => {
         </div>
 
 
-      <div className="sm:flex bg-orange-50 p-4 rounded-xl justify-between ring-2 ring-inset ring-gray-200 mt-2">
+      <div className="sm:flex bg-orange-50 p-2 px-8 rounded-xl justify-between ring-2 ring-inset ring-gray-200 mt-2">
         <div className="flex justify-center">
             <img src="/images/voiture.png" alt="Voiture" className="w-24 h-24 sm:w-32"/>
         </div>
