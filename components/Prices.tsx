@@ -36,7 +36,7 @@ export default function Prices() {
       <div className="mx-auto max-w-7xl px- lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl underline">Tarifs & Prestations</h2>
-          <p className="mt-6 text-lg leading-8 text-gray-800 font-semibold">
+          <p className="mt-6 text-sm leading-8 text-gray-800 font-semibold">
           Tarif horaires : <br />
           M1 : 60€ TTC (50€ HT)<br />
           M2 : 66€ TTC (55€ HT)<br />

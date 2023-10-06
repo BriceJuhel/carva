@@ -32,7 +32,7 @@ const Presentation = () => {
         </p>
       </div>
       <div className="flex justify-center">
-          <div className="rounded-2xl bg-gray-50 py-6 px-4 ring-1 ring-inset ring-orange-400 lg:flex lg:flex-col lg:justify-center lg:py-6 mt-4 sm:w-1/2">
+          <div className="rounded-2xl py-6 px-4 ring-2 ring-inset ring-orange-400 lg:flex lg:flex-col lg:justify-center lg:py-6 mt-4 sm:w-1/2">
             <p className="font-semibold text-center text-xl mb-4 ">
                 Choisir CARVA c&apos;est :
             </p>
