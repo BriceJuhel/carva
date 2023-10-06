@@ -15,7 +15,7 @@ const Presentation = () => {
                   smooth={true}
                   offset={-120}
                   duration={600}>
-            <button className="bg-orange-400 text-gray-800 p-2 sm:p- font-bold rounded sm:text-3xl hover:bg-orange-500">Prendre rendez-vous</button>
+            <button className="bg-orange-400 text-gray-800 p-2 sm:p-2 font-bold rounded sm:text-3xl hover:bg-orange-500">Prendre rendez-vous</button>
           </Link>
         </div>
       </div>
@@ -31,44 +31,46 @@ const Presentation = () => {
             sportives préférées avec soins et rigueur.
         </p>
       </div>
-      <div className="mt-10 sm:mt-10">
-        <p className="underline text-center text-xl mb-4 ">
-            Choisir CARVA c&apos;est :
-        </p>
-        <div className="sm:flex sm:justify-center">
-          <div className="pl-4 sm:mr-10">
-                  <ul className="list-disc">
-                      <li>
-                          Un seul interlocuteur
-                      </li>
-                      <li>
-                          Sérieux
-                      </li>
-                      <li>
-                          Réactivité
-                      </li>
-                      <li>
-                          Plus de 10 ans d&apos;expérience
-                      </li>
-                  </ul>
+      <div className="flex justify-center">
+          <div className="rounded-2xl bg-gray-50 py-6 px-4 ring-1 ring-inset ring-orange-400 lg:flex lg:flex-col lg:justify-center lg:py-6 mt-4 sm:w-1/2">
+            <p className="font-semibold text-center text-xl mb-4 ">
+                Choisir CARVA c&apos;est :
+            </p>
+            <div className="sm:flex sm:justify-center">
+              <div className="pl-4 sm:mr-10">
+                      <ul className="list-disc">
+                          <li>
+                              Un seul interlocuteur
+                          </li>
+                          <li>
+                              Sérieux
+                          </li>
+                          <li>
+                              Réactivité
+                          </li>
+                          <li>
+                              Plus de 10 ans d&apos;expérience
+                          </li>
+                      </ul>
+              </div>
+              <div className="pl-4">
+                      <ul className="list-disc">
+                          <li>
+                              Ponctuel
+                          </li>
+                          <li>
+                              Satisfaction clientèle
+                          </li>
+                          <li>
+                              Budget maîtrisé
+                          </li>
+                          <li>
+                              Confiance
+                          </li>
+                      </ul>
+              </div>
+            </div>
           </div>
-          <div className="pl-4">
-                  <ul className="list-disc">
-                      <li>
-                          Ponctuel
-                      </li>
-                      <li>
-                          Satisfaction clientèle
-                      </li>
-                      <li>
-                          Budget maîtrisé
-                      </li>
-                      <li>
-                          Confiance
-                      </li>
-                  </ul>
-          </div>
-        </div>
       </div>
 
       <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-4 lg:mx-0 lg:max-w-none md:grid-cols-2"></div>
