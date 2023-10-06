@@ -42,7 +42,7 @@ const Activities = () => {
             <img src="/images/vente.png" alt="Vente" className="w-24 h-24"/>
           </div>
           <div className="flex items-center justify-center">
-            <p className="text-center mt-4">
+            <p className="text-center mt-4 sm:pr-32">
             <span className="font-bold">Accompagnement</span> dans la <span className="font-bold">vente</span> de votre véhicule à particulier {" "}
             {/* <Link to="prices" className="underline cursor-pointer"
                   spy={true}
@@ -59,7 +59,7 @@ const Activities = () => {
             <img src="/images/loupe.png" alt="Loupe" className="w-24 h-24"/>
           </div>
           <div className="flex items-center justify-center">
-            <p className="text-center mt-4">
+            <p className="text-center mt-4 sm:pl-32">
             <span className="font-bold">Accompagnement</span> personnalisés dans la
             <span className="font-bold"> recherche</span> d&apos;un véhicule {" "}
             {/* <Link to="prices" className="underline cursor-pointer"

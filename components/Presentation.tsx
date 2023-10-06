@@ -26,9 +26,9 @@ const Presentation = () => {
             réparations et d&apos;entretien à domicile ou dans mon
             atelier suivant les prestations à effectuer, avec
             possibilité d&apos;un véhicule de prêt. <br />
-            Également passionnée du sport automobile que je
+            Également passionné du sport automobile que je
             pratique en loisirs, je saurai entretenir et préparer vos
-            sportives préférées avec soins et rigueur.
+            sportives préférées avec soin et rigueur.
         </p>
       </div>
       <div className="flex justify-center">
