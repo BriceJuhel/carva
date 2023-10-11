@@ -4,11 +4,11 @@ import { Link } from "react-scroll/modules"
 import React from "react"
 
 const includedOne = [
-  'Vidange huile moteur',
+  'Vidange huile moteur (dans la limite de 5L d’huile)',
   'Remplacement filtre à huile',
-  'Niveaux - Pression - Eclairage',
+  'Niveaux - Pression - Eclairage (hors Adblue)',
   'Lecture - Effacement défaut calculateur',
-  'Essai routier (dans la limite de 5L d’huile - hors Adblue)',
+  'Essai routier',
 ]
 
 const includedTwo = [
@@ -36,11 +36,11 @@ export default function Prices() {
       <div className="mx-auto max-w-7xl px- lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl underline">Tarifs & Prestations</h2>
-          <p className="mt-6 text-sm leading-8 text-gray-800 font-semibold">
+          <p className="mt-6 text-xs sm:text-sm leading-8 text-gray-800 font-semibold">
           Tarifs horaire : <br />
-          M1 : 60€ TTC (50€ HT)<br />
-          M2 : 66€ TTC (55€ HT)<br />
-          M3 : 72€ TTC (60€ HT)<br />
+          M1 : 60€ TTC (Travaux d’entretien - Vidange/Freinage)<br />
+          M2 : 66€ TTC (Travaux mécanique - Distribution/Embrayage)<br />
+          M3 : 72€ TTC (Travaux technique - Diagnostique systèmes électroniques)<br />
           </p>
         </div>
       </div>
@@ -49,18 +49,17 @@ export default function Prices() {
          <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
             <div className="rounded-2xl bg-gray-50 py-6 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-6 mt-4">
               <div className="mx-auto max-w-xs px-4">
-              <h3 className="text-2xl font-bold tracking-tight text-gray-900 text-center">Diagnostique à domicile</h3>
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 text-center">Forfait diagnostique à domicile</h3>
                 <p className="text-base font-semibold text-gray-600 mt-2">Dans la limite de 25km autour de la Chevrolière</p>
-                <p className="mt-6 flex items-baseline justify-center gap-x-2">
+                <p className="mt-8 flex items-baseline justify-center gap-x-2">
                   <span className="text-5xl font-bold tracking-tight text-gray-900">70€ TTC</span>
-                  <span className="font-semibold leading-6 tracking-wide text-gray-600">(58,33€ HT)</span>
                 </p>
                 <Link to="contact" 
                   spy={true}
                   smooth={true}
                   offset={-120}
                   duration={600}>
-                  <button className="mt-10 block w-full rounded-md bg-orange-400 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Prendre rendez-vous</button>
+                  <button className="mt-8 block w-full rounded-md bg-orange-400 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Prendre rendez-vous</button>
                 </Link>
               </div>
             </div>
@@ -71,18 +70,19 @@ export default function Prices() {
           <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
             <div className="rounded-2xl bg-gray-50 py-6 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-6 mt-4">
               <div className="mx-auto max-w-xs px-4">
-              <h3 className="text-2xl font-bold tracking-tight text-gray-900 text-center">Dépannage</h3>
-                <p className="text-base font-semibold text-gray-600 mt-2">Véhicule de moins de 1200kg</p>
-                <p className="mt-6 flex items-baseline justify-center gap-x-2">
-                  <span className="text-3xl font-bold tracking-tight text-gray-900">1,80€ TTC/km</span>
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 text-center">Forfait montage/équilibrage pneumatique à domicile</h3>
+              <div className='my-8'>
+                <p className="text-base font-semibold text-gray-600 mt-2">À partir de</p>
+                  <p className=" flex items-baseline justify-center gap-x-2">
+                    <span className="text-5xl font-bold tracking-tight text-gray-900">18€ TTC</span>
                 </p>
-                <p className="text-base font-semibold text-gray-600 mt-2">Minimum de 90€ TTC, soit 50km</p>
+              </div>
                 <Link to="contact" 
                   spy={true}
                   smooth={true}
                   offset={-120}
                   duration={600}>
-                  <button className="mt-10 block w-full rounded-md bg-orange-400 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contactez-moi</button>
+                  <button className="mt-4 block w-full rounded-md bg-orange-400 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contactez-moi</button>
                 </Link>
               </div>
             </div>
@@ -186,7 +186,12 @@ export default function Prices() {
           <div className="-mt-2 p-2 lg:mt-2 lg:w-full lg:max-w-md lg:flex-shrink-0 lg:items-center">
             <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
               <div className="mx-auto max-w-xs px-8">
-                  <p className="text-base font-semibold text-gray-600 mt-2">Sur devis suivant le type de recherche du véhicule et de la localisation (exemple : 349€ TTC pour une recherche et inspection d&apos;un véhicule à 50km maximum autour de La Chevrolière)</p>
+              <div className='my-14'>
+                <p className="text-base font-semibold text-gray-600 mt-2">À partir de</p>
+                  <p className=" flex items-baseline justify-center gap-x-2">
+                    <span className="text-5xl font-bold tracking-tight text-gray-900">349€ TTC</span>
+                </p>
+              </div>
                   <Link to="contact" 
                   spy={true}
                   smooth={true}

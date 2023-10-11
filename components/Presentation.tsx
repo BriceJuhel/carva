@@ -22,7 +22,7 @@ const Presentation = () => {
       <div className="mt-4 sm:mt-10 text-center">
         <p>
             Après une dizaine d&apos;années dans différents postes
-            dans l&apos;automobile, je vous propose mes services de
+            du secteur automobile, je vous propose mes services de
             réparations et d&apos;entretien à domicile ou dans mon
             atelier suivant les prestations à effectuer, avec
             possibilité d&apos;un véhicule de prêt. <br />
