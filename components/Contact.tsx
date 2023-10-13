@@ -25,18 +25,30 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = async (event: { preventDefault: () => void; target: any; }) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    const form = event.target;
-    const formData = new FormData(form);
-
+  
+    const form = event.target as HTMLFormElement;
+  
+    const formData = {
+      lastName: form.lastName.value,
+      firstName: form.firstName.value,
+      email: form.email.value,
+      phoneNumber: form.phoneNumber.value,
+      recontact: form.recontact.value,
+      infos: form.infos.value,
+      message: form.message.value
+    };
+  
     try {
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
         setSuccessMessage('Votre demande a bien été envoyée');
         form.reset(); // Réinitialiser le formulaire
