@@ -1,3 +1,4 @@
+"use client"
 import Presentation from "@/components/Presentation"
 import Activities from "@/components/Activities"
 import Prices from "@/components/Prices"

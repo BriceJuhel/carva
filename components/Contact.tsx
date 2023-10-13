@@ -28,32 +28,34 @@ export default function Contact() {
 
                 <p>  carva@email.com</p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-12 max-w-xl sm:mt-12">
+      <form action="../api/sendEmail" method="POST" className="mx-auto mt-12 max-w-xl sm:mt-12">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
               Nom
             </label>
             <div className="mt-2.5">
               <input
                 type="text"
-                name="first-name"
-                id="first-name"
-                autoComplete="given-name"
+                name="lastName"
+                id="last-name"
+                autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-400 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
+
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
               Prénom
             </label>
             <div className="mt-2.5">
               <input
                 type="text"
-                name="last-name"
-                id="last-name"
-                autoComplete="family-name"
+                name="firstName"
+                id="first-name"
+                autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-400 sm:text-sm sm:leading-6"
               />
             </div>
@@ -80,7 +82,7 @@ export default function Contact() {
             <div className="relative mt-2.5">
               <input
                 type="tel"
-                name="phone-number"
+                name="phoneNumber"
                 id="phone-number"
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-400 sm:text-sm sm:leading-6"
@@ -89,13 +91,13 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="recontact" className="block text-sm font-semibold leading-6 text-gray-900">
               Comment souhaitez-vous être recontacté(e) ?
             </label>
             <div className="mt-2.5">
               <textarea
-                name="message"
-                id="message"
+                name="recontact"
+                id="recontact"
                 rows={3}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-400 sm:text-sm sm:leading-6"
                 defaultValue={''}
@@ -104,13 +106,13 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label htmlFor="infos" className="block text-sm font-semibold leading-6 text-gray-900">
               Infos du véhicule
             </label>
             <div className="mt-2.5">
               <textarea
-                name="message"
-                id="message"
+                name="infos"
+                id="infos"
                 rows={3}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-400 sm:text-sm sm:leading-6"
                 defaultValue={''}
