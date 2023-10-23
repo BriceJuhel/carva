@@ -13,9 +13,9 @@ const Footer = () => {
                 />
             </div>  
             <div>
-                <p>Mr TESSIER Maxime</p>
-                <p>L&apos;Aubrais</p>
-                <p>44118 La Chevrolière</p>
+                <p>Mr Doe John</p>
+                {/* <p>L&apos;Aubrais</p> */}
+                <p>44000 Nantes</p>
                 <p>email@exemple.com</p>
                 <p>00 00 00 00 00</p>
             </div>
